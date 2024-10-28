@@ -1,4 +1,4 @@
-import 'package:bit_app/componentes/login/login.dart';
+import 'package:bit_app/components/login/login.dart';
 import 'package:bit_app/models/models.dart';
 import 'package:bit_app/utils/http_client.dart';
 import 'package:flutter/widgets.dart';

@@ -1,6 +1,6 @@
 // ignore_for_file: use_build_context_synchronously
 
-import 'package:bit_app/componentes/property/property.dart';
+import 'package:bit_app/components/property/property.dart';
 import 'package:bit_app/models/models.dart';
 import 'package:bit_app/utils/utils.dart';
 import 'package:flutter/material.dart';

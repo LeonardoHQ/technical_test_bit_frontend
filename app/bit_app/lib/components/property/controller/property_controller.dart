@@ -1,4 +1,4 @@
-import 'package:bit_app/componentes/property/property.dart';
+import 'package:bit_app/components/property/property.dart';
 import 'package:bit_app/models/models.dart';
 import 'package:bit_app/utils/constants.dart';
 import 'package:get/get.dart';
@@ -24,9 +24,9 @@ class PropertyController extends GetxController
     FilterField.STRING(displayName: 'Pais', APIName: 'country'),
     FilterField.STRING(displayName: 'Ciudad', APIName: 'city'),
     FilterField.STRING(
-        displayName: 'Metros² desde', APIName: 'square_footage_from'),
+        displayName: 'Metros² desde', APIName: 'squareFootageFrom'),
     FilterField.STRING(
-        displayName: 'Metros² hasta', APIName: 'square_footage_to'),
+        displayName: 'Metros² hasta', APIName: 'squareFootageTo'),
     FilterField.OPTION(
       APIName: 'type',
       displayName: 'Tipo de Propiedad',

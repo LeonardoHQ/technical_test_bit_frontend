@@ -197,6 +197,13 @@ class ModuleFilter {
 
     for (var field in fields) {
       if (!field.enabled) continue;
+
+      // Ugly fix for this demo
+      if (field.APIName == 'squareFootageFrom' ||
+          field.APIName == 'squareFootageTo') {
+        apiFilters[field.APIName] = double.tryParse(field.value);
+        continue;
+      }
       apiFilters[field.APIName] = field.value;
     }
 

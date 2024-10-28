@@ -1,4 +1,4 @@
-import 'package:bit_app/componentes/login/ui/login_page.dart';
+import 'package:bit_app/components/login/ui/login_page.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 

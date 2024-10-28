@@ -1,5 +1,6 @@
-import 'package:bit_app/componentes/property/property.dart';
-import 'package:bit_app/componentes/property/ui/property_detail_page.dart';
+import 'package:bit_app/components/filter/filter.dart';
+import 'package:bit_app/components/property/property.dart';
+import 'package:bit_app/components/property/ui/property_detail_page.dart';
 import 'package:bit_app/models/models.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -34,7 +35,25 @@ class PropertyListPage extends StatelessWidget {
         actions: [
           IconButton(
             icon: const Icon(Icons.filter_alt), // TODO: add filters
-            onPressed: () {},
+            onPressed: () {
+              final filterController = Get.put(FilterController());
+              filterController.loadModuleFilterDataInDialog(
+                  moduleName: 'Propiedades',
+                  routeName: '',
+                  moduleFieldFilters: propertyController.availableFieldFilters,
+                  moduleOrderFilters: propertyController.availableOrderFilters);
+
+
+              showDialog(
+                  context: context,
+                  builder: (context) => Theme(
+                        data: Theme.of(context)
+                            .copyWith(dialogBackgroundColor: Colors.white),
+                        child: FilterDialog(
+                          filterController: filterController,
+                        ),
+                      ));
+            },
           )
         ],
         centerTitle: true,

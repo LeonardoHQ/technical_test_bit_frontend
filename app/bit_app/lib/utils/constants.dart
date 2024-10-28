@@ -8,7 +8,7 @@ class BackendEndpoints {
   static const String propertyPath = '/property';
 }
 
-const int ITEMS_PER_PAGE = 15;
+const int ITEMS_PER_PAGE = 150;
 const int INITIAL_PAGE = 1;
 
 final DEFAULT_ORDER_FILTER = OrderField(

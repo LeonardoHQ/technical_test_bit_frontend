@@ -1,4 +1,4 @@
-import 'package:bit_app/componentes/login/login.dart';
+import 'package:bit_app/components/login/login.dart';
 import 'package:flutter/material.dart';
 
 class LoginUsernameEmailField extends StatelessWidget {

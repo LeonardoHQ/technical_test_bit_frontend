@@ -1,5 +1,5 @@
-import 'package:bit_app/componentes/property/property.dart';
-import 'package:bit_app/componentes/property/ui/property_detail_page.dart';
+import 'package:bit_app/components/property/property.dart';
+import 'package:bit_app/components/property/ui/property_detail_page.dart';
 import 'package:bit_app/models/models.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
