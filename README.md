@@ -35,3 +35,10 @@ El sistema:
     - **Repositorios**: Encargados de gestionar requests y responses hacia el backend. Transforman todas las requests y responses en objetos (modelos) entendibles por el sistema/ \
     - **Controladores**: Toda la lógica encarga de gestionar las acciones del usuario y el estado de la aplicación. Se comunican directamente con los repositorios.
     - **UI**: Capa autodescriptiva. NO se comunica con repositorios, únicamente con controladores.   
+
+
+## Ímagenes
+![alt text](./app/bit_app/demo_images/login.png)
+![alt text](./app/bit_app/demo_images/list.png)
+![alt text](./app/bit_app/demo_images/filter.png)
+![alt text](./app/bit_app/demo_images/form.png)
