@@ -85,7 +85,6 @@ class PropertyController extends GetxController
     Result<SS<void>, SE> result = await repo.delete(id: id);
 
     result.when((success) {
-      int index = state!.indexWhere((property) => property.id == id);
       getList();
     }, (e) {
       error = e;
